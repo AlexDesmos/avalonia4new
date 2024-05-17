@@ -1,0 +1,88 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="using:avalonia4.ViewModels"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="1300" d:DesignHeight="800"
+        x:Class="avalonia4.Views.MainWindow"
+        x:DataType="vm:MainWindowViewModel"
+        Icon="/Assets/avalonia-logo.ico"
+        Title="avalonia4">
+
+    <Design.DataContext>
+        <!-- This only sets the DataContext for the previewer in an IDE,
+             to set the actual DataContext for runtime, set the DataContext property in code (look at App.axaml.cs) -->
+        <vm:MainWindowViewModel/>
+    </Design.DataContext>
+
+	<Grid ShowGridLines="True"
+			  RowDefinitions="50, *"
+			  ColumnDefinitions="950, *">
+
+		<DockPanel	Grid.Row="0"
+					Grid.ColumnSpan="2"
+					Background="PowderBlue"
+					HorizontalAlignment="Left"
+					MaxHeight="50"
+					MaxWidth="950">
+			<TextBlock Margin="20 15" Text="Home"/>
+			<TextBlock Margin="30 15" Text="About"/>
+			<TextBlock Margin="30 15">Blog's main topic №1</TextBlock>
+			<TextBlock Margin="30 15">Blog's main topic №2</TextBlock>
+			<TextBlock Margin="30 15">Blog's main topic №3</TextBlock>
+			<TextBlock Margin="30 15">Associated blogs</TextBlock>
+		</DockPanel>
+
+		<StackPanel Grid.Column="1"
+					Grid.Row="0"
+					Background="PowderBlue">
+			<TextBlock HorizontalAlignment="Right" VerticalAlignment="Center"
+					   Margin="0,15,10,0"
+						   >
+				RSS
+
+			</TextBlock>
+		</StackPanel>
+
+		<ListBox Grid.Row="1" Grid.Column="0" ItemsSource="{Binding BlogEntities}">
+			<ListBox.ItemTemplate>
+				<DataTemplate>
+					<StackPanel>
+						<TextBlock TextWrapping="Wrap" Text="{Binding Article}" 
+								   HorizontalAlignment="Center"
+								   Margin="0,20,0,40"/>
+						<TextBlock TextWrapping="Wrap" Text="{Binding Text}"
+								   Margin="20,0,50,0"/>
+						<Image Source="{Binding ImagePath, Converter={x:Static infrastructure:BitmapValueConverter.Instance}}"
+							   Height="100"/>
+						<ItemsControl ItemsSource="{Binding Tags} "
+									  VerticalAlignment="Bottom">
+							<ItemsControl.ItemsPanel>
+								<ItemsPanelTemplate>
+									<StackPanel Orientation="Horizontal" />
+								</ItemsPanelTemplate>
+							</ItemsControl.ItemsPanel>
+						</ItemsControl>
+					</StackPanel>
+				</DataTemplate>
+			</ListBox.ItemTemplate>
+		</ListBox>
+
+		<ListBox Grid.Row="1" Grid.Column="1"  ItemsSource="{Binding NewsEntities}">
+			<ListBox.ItemTemplate>
+				<DataTemplate>
+					<StackPanel>
+						<TextBlock TextWrapping="Wrap" Text="{Binding Text}"
+								   Margin="0,0,0,-20"/>
+						<TextBlock TextWrapping="Wrap" Text="{Binding PostingTime}"/>
+					</StackPanel>
+				</DataTemplate>
+			</ListBox.ItemTemplate>
+		</ListBox>
+
+
+
+
+	</Grid>
+
+</Window>
