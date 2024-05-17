@@ -1,12 +1,53 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\mboro\\source\\repos\\avalonia4\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{AE5BEC40-967D-4D19-ABB9-FC6180B7B366}|avalonia4.csproj|c:\\users\\mboro\\source\\repos\\avalonia4\\views\\mainwindow.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
+      "RelativeMoniker": "D:0:0:{AE5BEC40-967D-4D19-ABB9-FC6180B7B366}|avalonia4.csproj|solutionrelative:views\\mainwindow.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AE5BEC40-967D-4D19-ABB9-FC6180B7B366}|avalonia4.csproj|c:\\users\\mboro\\source\\repos\\avalonia4\\avalonia4.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{AE5BEC40-967D-4D19-ABB9-FC6180B7B366}|avalonia4.csproj|solutionrelative:avalonia4.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "avalonia4",
+              "DocumentMoniker": "C:\\Users\\mboro\\source\\repos\\avalonia4\\avalonia4.csproj",
+              "RelativeDocumentMoniker": "avalonia4.csproj",
+              "ToolTip": "C:\\Users\\mboro\\source\\repos\\avalonia4\\avalonia4.csproj",
+              "RelativeToolTip": "avalonia4.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-05-17T21:40:49.91Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainWindow.axaml",
+              "DocumentMoniker": "C:\\Users\\mboro\\source\\repos\\avalonia4\\Views\\MainWindow.axaml",
+              "RelativeDocumentMoniker": "Views\\MainWindow.axaml",
+              "ToolTip": "C:\\Users\\mboro\\source\\repos\\avalonia4\\Views\\MainWindow.axaml",
+              "RelativeToolTip": "Views\\MainWindow.axaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-05-17T21:24:07.36Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

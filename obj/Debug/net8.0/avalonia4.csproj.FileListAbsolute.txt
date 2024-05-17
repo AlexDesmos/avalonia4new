@@ -129,3 +129,4 @@ C:\Users\mboro\source\repos\avalonia4\obj\Debug\net8.0\avalonia4.pdb
 C:\Users\mboro\source\repos\avalonia4\obj\Debug\net8.0\avalonia4.csproj.Up2Date
 C:\Users\mboro\source\repos\avalonia4\obj\Debug\net8.0\avalonia4.genruntimeconfig.cache
 C:\Users\mboro\source\repos\avalonia4\obj\Debug\net8.0\ref\avalonia4.dll
+C:\Users\mboro\source\repos\avalonia4\obj\Debug\net8.0\avalonia4.sourcelink.json
